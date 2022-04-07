@@ -27,3 +27,5 @@ pandas
 # extras --------------------------------------
 thop  # FLOPS computation
 pycocotools>=2.0  # COCO mAP
+streamlit==1.8.1
+streamlit-metrics==0.1.0
