@@ -53,7 +53,6 @@ if __name__ == '__main__':
     parser.add_argument('--name', default='exp', help='save results to project/name')
     parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')
 
-    check_requirements(exclude=('pycocotools', 'thop'))
 
     source = ("yolov5s", "PPLcnet", "Repvggnet", "Shufflenet")     # 选择不同的权重文件
     source_index = st.sidebar.selectbox("选择输入", range(
@@ -72,6 +71,8 @@ if __name__ == '__main__':
     print("xxxx")
     print(opt)
 
+    
+    check_requirements(exclude=('pycocotools', 'thop'))
 
     # if source_index == 0:
 
