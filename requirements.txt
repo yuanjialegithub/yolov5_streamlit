@@ -82,7 +82,7 @@ onnx==1.11.0
 onnx-simplifier==0.3.7
 onnxoptimizer==0.2.6
 onnxruntime==1.11.0
-opencv-python==4.5.5.62
+opencv-python-headless==4.5.5.62
 openvino==2021.4.2
 openvino-dev==2021.4.2
 packaging==21.3
