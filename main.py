@@ -54,7 +54,7 @@ if __name__ == '__main__':
     parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')
 
 
-    source = ("yolov5s", "PPLcnet", "Repvggnet", "Shufflenet")     # 选择不同的权重文件
+    source = ("yolov5s", "PPLcnet", "Shufflenet")     # 选择不同的权重文件
     source_index = st.sidebar.selectbox("选择输入", range(
         len(source)), format_func=lambda x: source[x])
 
@@ -62,8 +62,8 @@ if __name__ == '__main__':
         parser.add_argument('--weights', nargs='+', type=str, default='yolov5s.pt', help='model.pt path(s)')
     elif source_index == 1:
         parser.add_argument('--weights', nargs='+', type=str, default='weights/v5lite-c.pt', help='model.pt path(s)')
-    elif source_index == 2:
-        parser.add_argument('--weights', nargs='+', type=str, default='weights/v5lite-g.pt', help='model.pt path(s)')
+#     elif source_index == 2:
+#         parser.add_argument('--weights', nargs='+', type=str, default='weights/v5lite-g.pt', help='model.pt path(s)')
     else:
         parser.add_argument('--weights', nargs='+', type=str, default='weights/v5lite-s.pt', help='model.pt path(s)')
 
